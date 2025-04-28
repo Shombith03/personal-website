@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #8fd3f4, #84fab0, #f6d365, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Scroll Down */
+.scroll-down {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    animation: bounce 2s infinite;
+}
+
+/* About Me */
+.about-me {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.about-me h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.tags span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Projects Section */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card small {
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Companies Section */
+.companies h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.company-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+.social-footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-footer h2 {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
