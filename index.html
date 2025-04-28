@@ -1,105 +1,80 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shombith Lastname | Game Developer & Unity Specialist</title>
+  <title>Shombith Lastname</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pIVJQFq6X4fjG+o9wlCmjvRzY+l9O+Y4IlTlzW1sYzYXMBjX4jmI1JeMaViWz+LvX0sI+Qx1McF5RZHV0P4Pyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <h1>SHOMBIT H LASTNAME</h1>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="title">SHOMBITH CHAKRABORTY</h1>
       <p class="subtitle">Game Developer | Tool Creator | Unity Specialist</p>
-      <p class="scroll-hint">SCROLL DOWN</p>
+      <!-- <p class="scroll">SCROLL DOWN</p> -->
     </header>
 
-    <section class="cards-row">
-      <div class="card about-card">
-        <h2>ABOUT ME</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="tags">
-          <span>Unity Expert</span>
-          <span>Photon Multiplayer</span>
-          <span>Asset Store Publisher</span>
-          <span>3.1 Years Experience</span>
-        </div>
+    <main>
+      <!-- First Row: About Me & Projects -->
+      <div class="grid-two">
+        <section class="card about">
+          <h2>ABOUT ME</h2>
+          <div class="avatar-placeholder"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="tags">
+            <span>Unity Expert</span>
+            <span>Photon Multiplayer</span>
+            <span>Asset Store Publisher</span>
+            <span>3.1 Years Experience</span>
+          </div>
+        </section>
+
+        <section class="card projects">
+          <h2>PROJECTS</h2>
+          <div class="projects-grid">
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Puzzle Quest</h3><p>Puzzle spent</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Ranger</h3><p>BattleJgaming</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Elemental</h3><p>Coaariv</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Level Designer</h3><p>AMutationam</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Velocity Rush</h3><p>EdiLoria Tesinger</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Terrain Generator</h3><p>Partforaphy</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Cosmic Conquest</h3><p>Constrarmast</p></a>
+            <a class="project-item" href="#"><div class="project-placeholder"></div><h3>Animation Tool</h3><p>Automaio</p></a>
+          </div>
+        </section>
       </div>
 
-      <div class="card projects-card">
-        <h2>PROJECTS</h2>
-        <div class="projects-grid">
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Puzzle Quest</h3>
-            <p>Puzzle spent</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Ranger</h3>
-            <p>Battleigaming</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Elemental</h3>
-            <p>Coaariv</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Level Designer</h3>
-            <p>AMutationam</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Velocity Rush</h3>
-            <p>Ediloris Tesinger</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Terrain Generator</h3>
-            <p>Partforaphy</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Cosmic Conquest</h3>
-            <p>Constrarmast</p>
-          </div>
-          <div class="project-item">
-            <div class="icon"></div>
-            <h3>Animation Tool</h3>
-            <p>Automatio</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Second Row: Companies & Socials -->
+      <div class="grid-three">
+        <section class="card companies-worked">
+          <h2>COMPANIES I WORKED WITH</h2>
+          <ul>
+            <li>Digita Forge</li>
+            <li>Nebula Interactive</li>
+            <li>Vortex Entertainment</li>
+            <li>Starblade</li>
+          </ul>
+        </section>
 
-    <section class="cards-row">
-      <div class="card companies-card">
-        <h2>COMPANIES I WORKED WITH</h2>
-        <ul class="company-list">
-          <li>Digita Forge</li>
-          <li>Nebula Interactive</li>
-          <li>Vortex Entertainment</li>
-          <li>Starblade</li>
-        </ul>
-      </div>
+        <section class="card companies-run">
+          <h2>COMPANIES I RUN</h2>
+          <ul>
+            <li>Your Company 1</li>
+            <li>Your Company 2</li>
+          </ul>
+        </section>
 
-      <div class="card connect-card">
-        <h2>LET'S CONNECT!</h2>
-        <a href="#" class="btn">YethGameDev</a>
+        <section class="card socials">
+          <h2>SOCIALS</h2>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="https://github.com" target="_blank" rel="noopener"><img src="icons/github.svg" alt="GitHub" /></a>
+            <a href="https://unity.com" target="_blank" rel="noopener"><img src="icons/unity.svg" alt="Unity" /></a>
+            <a href="mailto:youremail@example.com"><img src="icons/email.svg" alt="Email" /></a>
+          </div>
+        </section>
       </div>
-
-      <div class="card connect-card icons">
-        <h2>LET'S CONNECT!</h2>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-unity"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </section>
+    </main>
   </div>
 </body>
 </html>
